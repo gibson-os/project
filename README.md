@@ -1,6 +1,6 @@
 # Install
 ```shell
-composer create-project gibson-os/project path-to-install
+composer create-project gibson-os/project path-to-install --ignore-platform-reqs --no-dev
 cd path-to-install
 ```
 
@@ -10,19 +10,12 @@ docker-compose -f .docker/docker-compose.yaml build
 docker-compose -f .docker/docker-compose.yaml up -d
 ```
 
-````shell
-docker exec -it gibson_os-mysql-1 mariadb --user root -pldspFfsd8D0fds
-````
-
-````mysql
-CREATE DATABASE gibson_os;
-````
-
-````shell
+```shell
 docker exec -it gibson_os-webserver-1 /bin/bash
 cd home/gibsonOS/
-composer install
 bin/command core:install
-````
+```
+
+http://localhost
 
 !!! Cronjobs !!!
