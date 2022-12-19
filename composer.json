@@ -1,0 +1,50 @@
+{
+  "require": {
+    "php": " ^8.1",
+    "gibson-os/ahoi": "^1.0.0",
+    "gibson-os/archivist": "^1.0.0",
+    "gibson-os/core": "^1.0.0",
+    "gibson-os/explorer": "^1.0.0",
+    "gibson-os/hc": "^1.0.0",
+    "gibson-os/transfer": "^1.0.0",
+    "endroid/qr-code": "^3.7",
+    "ext-mbstring": "*"
+  },
+  "require-dev": {
+    "codeception/codeception": "^4.0",
+    "friendsofphp/php-cs-fixer": "^3.0",
+    "phpmd/phpmd": "^2.7",
+    "captainhook/captainhook": "^5.0",
+    "captainhook/plugin-composer": "^5.0",
+    "vimeo/psalm": "^4.0",
+    "codeception/module-asserts": "^1.3"
+  },
+  "scripts": {
+    "fix": [
+      "@php-cs"
+    ],
+    "test": [
+      "@php-cs-dry",
+      "@php-psalm",
+      "@php-md",
+      "@php-unit"
+    ],
+    "docker:up": "docker-compose -f .docker/docker-compose.yaml up -d",
+    "docker:build": "docker-compose -f .docker/docker-compose.yaml build",
+    "docker:ssh": "echo run 'docker exec -it docker_gos_webserver_1 /bin/bash'",
+    "gos-install": "docker exec docker_gos_webserver_1 'php /home/gibsonOS/offline/tools/system/install.php'",
+    "php:cs:fix": "php ./vendor/friendsofphp/php-cs-fixer/php-cs-fixer fix includes --verbose",
+    "php:cs:dry": "php ./vendor/friendsofphp/php-cs-fixer/php-cs-fixer fix includes --verbose --dry-run",
+    "php:psalm": "php ./vendor/vimeo/psalm/psalm",
+    "php:md": "php ./vendor/phpmd/phpmd/src/bin/phpmd includes text ruleset.xml",
+    "php:unit": "php ./vendor/codeception/codeception/codecept run unit --ext DotReporter",
+    "php:unit:push": "php ./vendor/codeception/codeception/codecept run unit --ext DotReporter --no-ansi --no-colors",
+    "php:unit:add": "php ./vendor/codeception/codeception/codecept generate:test unit"
+  },
+  "config": {
+    "allow-plugins": {
+      "composer/package-versions-deprecated": true,
+      "captainhook/plugin-composer": true
+    }
+  }
+}

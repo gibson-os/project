@@ -1,0 +1,238 @@
+
+
+/* Default */
+
+.icon16 {
+    background-position: -144px 0 !important;
+    width: 16px;
+    height: 16px;
+}
+
+.icon32 {
+    background-position: -112px 0 !important;
+    width: 32px;
+    height: 32px;
+}
+
+.icon48 {
+    background-position: -64px 0 !important;
+    width: 48px;
+    height: 48px;
+}
+
+.icon64 {
+    background-position: 0 0 !important;
+    width: 64px;
+    height: 64px;
+}
+
+.icon128 {
+    background-position: 384px 0 !important;
+    width: 128px;
+    height: 128px;
+}
+
+.icon256 {
+    background-position: 256px 0 !important;
+    width: 256px;
+    height: 256px;
+}
+
+.icon_desktop_button {
+    background-position: 0 0 !important;
+    padding: 68px 0 0 !important;
+    width: 64px !important;
+}
+
+/* Logo */
+.icon_logo {background-image: url(../img/icons/logo.png) !important;}
+
+.icon_loading {
+    background-image: url(../img/icons/loading.gif);
+}
+
+/* System Icons */
+
+.icon_system {
+    background-image: url(../img/icons/system.png) !important;
+    width: 16px;
+    height: 16px;
+}
+
+.system_back {background-position: 0 0 !important;}
+.system_up {background-position: -16px 0 !important;}
+.system_down {background-position: -32px 0 !important;}
+.system_next {background-position: -48px 0 !important;}
+.system_refresh {background-position: -64px 0 !important;}
+.system_save {background-position: -80px 0 !important;}
+.system_delete {background-position: -96px 0 !important;}
+.system_print {background-position: -112px 0 !important;}
+.system_key {background-position: -128px 0 !important;}
+.system_exit {background-position: -144px 0 !important;}
+.system_show {background-position: -160px 0 !important;}
+.system_paintcan {background-position: -176px 0 !important;}
+.system_brush {background-position: -192px 0 !important;}
+.system_pipette {background-position: -208px 0 !important;}
+.system_update {background-position: -224px 0 !important;}
+.system_add {background-position: -240px 0 !important;}
+.system_upload {background-position: -256px 0 !important;}
+.system_rotate_clockwise {background-position: -272px 0 !important;}
+.system_rotate_anticlockwise {background-position: -288px 0 !important;}
+.system_flip_vertical {background-position: -304px 0 !important;}
+.system_flip_horizontal {background-position: -320px 0 !important;}
+.system_door_closed {background-position: -336px 0 !important;}
+.system_door_open {background-position: -352px 0 !important;}
+.system_bell {background-position: -368px 0 !important;}
+.system_bell_disabled {background-position: -384px 0 !important;}
+.system_filter {background-position: -400px 0 !important;}
+.system_play {background-position: -416px 0 !important;}
+.system_pause {background-position: -432px 0 !important;}
+.system_stop {background-position: -448px 0 !important;}
+.system_edit {background-position: -464px 0 !important;}
+.system_clock {background-position: -480px 0 !important;}
+.system_clock_set {background-position: -496px 0 !important;}
+.system_clock_play {background-position: -512px 0 !important;}
+.system_clock_edit {background-position: -528px 0 !important;}
+.system_cart {background-position: -544px 0 !important;}
+.system_search {background-position: -560px 0 !important;}
+.system_view_very_big_icons {background-position: -576px 0 !important;}
+.system_view_big_icons {background-position: -592px 0 !important;}
+.system_view_middle_icons {background-position: -608px 0 !important;}
+.system_view_small_icons {background-position: -624px 0 !important;}
+.system_view_very_small_icons {background-position: -640px 0 !important;}
+.system_view_details {background-position: -656px 0 !important;}
+.system_chromecast_connected {background-position: -672px 0 !important;}
+.system_chromecast_active {background-position: -688px 0 !important;}
+.system_chromecast {background-position: -704px 0 !important;}
+.system_sync {background-position: -720px 0 !important;}
+
+/* File Icons */
+
+.icon_default {background-image: url(../img/icons/file/default.png) !important;}
+.icon_dir {background-image: url(../img/icons/file/dir.png) !important;}
+.icon_aac {background-image: url(../img/icons/file/aac.png) !important;}
+.icon_ac3 {background-image: url(../img/icons/file/ac3.png) !important;}
+.icon_ace {background-image: url(../img/icons/file/ace.png) !important;}
+.icon_ade {background-image: url(../img/icons/file/ade.png) !important;}
+.icon_adp {background-image: url(../img/icons/file/adp.png) !important;}
+.icon_ai {background-image: url(../img/icons/file/ai.png) !important;}
+.icon_aiff {background-image: url(../img/icons/file/aiff.png) !important;}
+.icon_apk {background-image: url(../img/icons/file/apk.png) !important;}
+.icon_aspx {background-image: url(../img/icons/file/aspx.png) !important;}
+.icon_au {background-image: url(../img/icons/file/au.png) !important;}
+.icon_avi {background-image: url(../img/icons/file/avi.png) !important;}
+.icon_bat {background-image: url(../img/icons/file/bat.png) !important;}
+.icon_bin {background-image: url(../img/icons/file/bin.png) !important;}
+.icon_bmp {background-image: url(../img/icons/file/bmp.png) !important;}
+.icon_bup {background-image: url(../img/icons/file/bup.png) !important;}
+.icon_cab {background-image: url(../img/icons/file/cab.png) !important;}
+.icon_cat {background-image: url(../img/icons/file/cat.png) !important;}
+.icon_chm {background-image: url(../img/icons/file/chm.png) !important;}
+.icon_css {background-image: url(../img/icons/file/css.png) !important;}
+.icon_cue {background-image: url(../img/icons/file/cue.png) !important;}
+.icon_dat {background-image: url(../img/icons/file/dat.png) !important;}
+.icon_dcr {background-image: url(../img/icons/file/dcr.png) !important;}
+.icon_der {background-image: url(../img/icons/file/der.png) !important;}
+.icon_dic {background-image: url(../img/icons/file/dic.png) !important;}
+.icon_divx {background-image: url(../img/icons/file/divx.png) !important;}
+.icon_diz {background-image: url(../img/icons/file/diz.png) !important;}
+.icon_dll {background-image: url(../img/icons/file/dll.png) !important;}
+.icon_doc {background-image: url(../img/icons/file/doc.png) !important;}
+.icon_docx {background-image: url(../img/icons/file/docx.png) !important;}
+.icon_dos {background-image: url(../img/icons/file/dos.png) !important;}
+.icon_dvd {background-image: url(../img/icons/file/dvd.png) !important;}
+.icon_dwg {background-image: url(../img/icons/file/dwg.png) !important;}
+.icon_dwt {background-image: url(../img/icons/file/dwt.png) !important;}
+.icon_emf {background-image: url(../img/icons/file/emf.png) !important;}
+.icon_eps {background-image: url(../img/icons/file/eps.png) !important;}
+.icon_exc {background-image: url(../img/icons/file/exc.png) !important;}
+.icon_exe {background-image: url(../img/icons/file/exe.png) !important;}
+.icon_fon {background-image: url(../img/icons/file/fon.png) !important;}
+.icon_gif {background-image: url(../img/icons/file/gif.png) !important;}
+.icon_gz {background-image: url(../img/icons/file/gz.png) !important;}
+.icon_hlp {background-image: url(../img/icons/file/hlp.png) !important;}
+.icon_html {background-image: url(../img/icons/file/html.png) !important;}
+.icon_ifo {background-image: url(../img/icons/file/ifo.png) !important;}
+.icon_inf {background-image: url(../img/icons/file/inf.png) !important;}
+.icon_ini {background-image: url(../img/icons/file/ini.png) !important;}
+.icon_ins {background-image: url(../img/icons/file/ins.png) !important;}
+.icon_ip {background-image: url(../img/icons/file/ip.png) !important;}
+.icon_iso {background-image: url(../img/icons/file/iso.png) !important;}
+.icon_isp {background-image: url(../img/icons/file/isp.png) !important;}
+.icon_java {background-image: url(../img/icons/file/java.png) !important;}
+.icon_jfif {background-image: url(../img/icons/file/jfif.png) !important;}
+.icon_jpeg {background-image: url(../img/icons/file/jpeg.png) !important;}
+.icon_jpg {background-image: url(../img/icons/file/jpg.png) !important;}
+.icon_log {background-image: url(../img/icons/file/log.png) !important;}
+.icon_m4a {background-image: url(../img/icons/file/m4a.png) !important;}
+.icon_mid {background-image: url(../img/icons/file/mid.png) !important;}
+.icon_mkv {background-image: url(../img/icons/file/mkv.png) !important;}
+.icon_mmf {background-image: url(../img/icons/file/mmf.png) !important;}
+.icon_mmm {background-image: url(../img/icons/file/mmm.png) !important;}
+.icon_mov {background-image: url(../img/icons/file/mov.png) !important;}
+.icon_movie {background-image: url(../img/icons/file/movie.png) !important;}
+.icon_mp2 {background-image: url(../img/icons/file/mp2.png) !important;}
+.icon_mp2v {background-image: url(../img/icons/file/mp2v.png) !important;}
+.icon_mp3 {background-image: url(../img/icons/file/mp3.png) !important;}
+.icon_mp4 {background-image: url(../img/icons/file/mp4.png) !important;}
+.icon_mpe {background-image: url(../img/icons/file/mpe.png) !important;}
+.icon_mpeg {background-image: url(../img/icons/file/mpeg.png) !important;}
+.icon_mpg {background-image: url(../img/icons/file/mpg.png) !important;}
+.icon_mpv2 {background-image: url(../img/icons/file/mpv2.png) !important;}
+.icon_nfo {background-image: url(../img/icons/file/nfo.png) !important;}
+.icon_pdd {background-image: url(../img/icons/file/pdd.png) !important;}
+.icon_pdf {background-image: url(../img/icons/file/pdf.png) !important;}
+.icon_php {background-image: url(../img/icons/file/php.png) !important;}
+.icon_png {background-image: url(../img/icons/file/png.png) !important;}
+.icon_ppt {background-image: url(../img/icons/file/ppt.png) !important;}
+.icon_pptx {background-image: url(../img/icons/file/pptx.png) !important;}
+.icon_psd {background-image: url(../img/icons/file/psd.png) !important;}
+.icon_rar {background-image: url(../img/icons/file/rar.png) !important;}
+.icon_reg {background-image: url(../img/icons/file/reg.png) !important;}
+.icon_rtf {background-image: url(../img/icons/file/rtf.png) !important;}
+.icon_scp {background-image: url(../img/icons/file/scp.png) !important;}
+.icon_theme {background-image: url(../img/icons/file/theme.png) !important;}
+.icon_tif {background-image: url(../img/icons/file/tif.png) !important;}
+.icon_tiff {background-image: url(../img/icons/file/tiff.png) !important;}
+.icon_tlb {background-image: url(../img/icons/file/tlb.png) !important;}
+.icon_ttf {background-image: url(../img/icons/file/ttf.png) !important;}
+.icon_txt {background-image: url(../img/icons/file/txt.png) !important;}
+.icon_uis {background-image: url(../img/icons/file/uis.png) !important;}
+.icon_url {background-image: url(../img/icons/file/url.png) !important;}
+.icon_vbs {background-image: url(../img/icons/file/vbs.png) !important;}
+.icon_vcr {background-image: url(../img/icons/file/vcr.png) !important;}
+.icon_vob {background-image: url(../img/icons/file/vob.png) !important;}
+.icon_wav {background-image: url(../img/icons/file/wav.png) !important;}
+.icon_wba {background-image: url(../img/icons/file/wba.png) !important;}
+.icon_wma {background-image: url(../img/icons/file/wma.png) !important;}
+.icon_wmv {background-image: url(../img/icons/file/wmv.png) !important;}
+.icon_wpl {background-image: url(../img/icons/file/wpl.png) !important;}
+.icon_wri {background-image: url(../img/icons/file/wri.png) !important;}
+.icon_wtx {background-image: url(../img/icons/file/wtx.png) !important;}
+.icon_xls {background-image: url(../img/icons/file/xls.png) !important;}
+.icon_xlsx {background-image: url(../img/icons/file/xlsx.png) !important;}
+.icon_xml {background-image: url(../img/icons/file/xml.png) !important;}
+.icon_xsl {background-image: url(../img/icons/file/xsl.png) !important;}
+.icon_zap {background-image: url(../img/icons/file/zap.png) !important;}
+.icon_zip {background-image: url(../img/icons/file/zip.png) !important;}
+
+/* App Icons */
+
+.icon_noimage {background-image: url(../img/icons/app/noimage.png) !important;}
+.icon_bug {background-image: url(../img/icons/app/bug.png) !important;}
+.icon_scan {background-image: url(../img/icons/app/scan.png) !important;}
+.icon_harddrive {background-image: url(../img/icons/app/harddrive.png) !important;}
+.icon_homecontrol {background-image: url(../img/icons/app/homecontrol.png) !important;}
+.icon_bell {background-image: url(../img/icons/app/bell.png) !important;}
+.icon_led {background-image: url(../img/icons/app/led.png) !important;}
+.icon_rdm {background-image: url(../img/icons/app/rdm.png) !important;}
+.icon_rhinetower {background-image: url(../img/icons/app/rhinetower.png) !important;}
+.icon_boxvario33 {background-image: url(../img/icons/app/boxvario33.png) !important;}
+.icon_bridge {background-image: url(../img/icons/app/bridge.png) !important;}
+.icon_remotecontrol {background-image: url(../img/icons/app/remotecontrol.png) !important;}
+.icon_user {background-image: url(../img/icons/app/user.png) !important;}
+.icon_settings {background-image: url(../img/icons/app/settings.png) !important;}
+.icon_modules {background-image: url(../img/icons/app/modules.png) !important;}
+.icon_trash {background-image: url(../img/icons/app/trash.png) !important;}
+.icon_ahoi {background-image: url(../img/icons/app/ahoi.png) !important;}
+.icon_html5 {background-image: url(../img/icons/app/html5.png) !important;}

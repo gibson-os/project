@@ -1,0 +1,50 @@
+#!/usr/bin/env php
+<?php
+declare(strict_types=1);
+
+use GibsonOS\Core\Command\ListCommand;
+use GibsonOS\Core\Exception\CommandError;
+use GibsonOS\Core\Exception\FactoryError;
+use GibsonOS\Core\Manager\ReflectionManager;
+use GibsonOS\Core\Service\CommandService;
+use GibsonOS\Core\Service\ProcessService;
+
+require __DIR__ . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . 'bootstrap.php';
+
+try {
+    $serviceManager = initServiceManager();
+    $commandService = new CommandService(
+        $serviceManager,
+        $serviceManager->get(ProcessService::class),
+        $serviceManager->get(ReflectionManager::class)
+    );
+
+    return $commandService->execute(
+        $commandService->getCommandClassname($argv),
+        $commandService->getArguments($argv),
+        $commandService->getOptions($argv)
+    );
+} catch (Throwable $e) {
+    $lines = [get_class($e) . ': ' . $e->getMessage()];
+
+    foreach ($e->getTrace() as $trace) {
+        $lines[] = $trace['file'] . ':' . $trace['line'] . ($trace['type'] ?? ' ') . $trace['function'] . '()';
+    }
+
+    $lineLengths = array_map(fn (string $line): int => mb_strlen($line), $lines);
+    $maxLength = max($lineLengths);
+
+    echo PHP_EOL . "    \033[41m\033[1;37m    " . str_pad('', $maxLength, ' ') . "    \033[0m    " . PHP_EOL;
+
+    foreach ($lines as $line) {
+        echo "    \033[41m\033[1;37m    " . sprintf('%-' . $maxLength . 's', $line) . "    \033[0m    " . PHP_EOL;
+    }
+
+    echo "    \033[41m\033[1;37m    " . str_pad('', $maxLength, ' ') . "    \033[0m    " . PHP_EOL . PHP_EOL;
+
+    if ($e instanceof CommandError || $e instanceof FactoryError) {
+        $commandService->execute(ListCommand::class);
+    }
+
+    return 255;
+}

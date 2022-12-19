@@ -1,0 +1,5 @@
+.gibsonStore
+vendor/
+.php-cs-fixer.cache
+.docker/mysql/
+.docker/elasticsearch/

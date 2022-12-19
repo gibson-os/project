@@ -1,0 +1,47 @@
+version: '3'
+services:
+  webserver:
+    build:
+      context: ..
+      dockerfile: .docker/GibsonOS.Dockerfile
+    ports:
+      - "80:80"
+      - "443:443"
+      - "42000-43000:42000-43000/udp"
+    volumes:
+      - ../:/home/gibsonOS/
+      - ../htdocs/js/ext-4.2.1.883/:/home/gibsonOS/htdocs/js/ext/
+      - ../htdocs/fontawesome-free-5.9.0-web/:/home/gibsonOS/htdocs/fontawesome/
+    cap_add:
+      - NET_ADMIN
+    environment:
+      APP_ENV: 'dev'
+  mysql:
+    image: mariadb:latest
+    restart: always
+    ports:
+      - "3306:3306"
+    volumes:
+      - ./mysql:/var/lib/mysql
+    environment:
+      TZ: "Europe/Berlin"
+      MYSQL_ALLOW_EMPTY_PASSWORD: "no"
+      MYSQL_ROOT_PASSWORD: "ldspFfsd8D0fds"
+      MYSQL_USER: 'gibson_os'
+      MYSQL_PASSWORD: 'sZXpQ6V72adFtTsv'
+      MYSQL_DATABASE: 'gibson_os'
+  elasticsearch:
+    image: elasticsearch:7.12.1
+    ports:
+      - "9200:9200"
+    volumes:
+      - ./elasticsearch:/usr/share/elasticsearch/data
+    environment:
+      - discovery.type=single-node
+      - node.name=es
+      - bootstrap.memory_lock=true
+      - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
+    ulimits:
+      memlock:
+        soft: -1
+        hard: -1

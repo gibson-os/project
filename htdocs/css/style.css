@@ -1,0 +1,469 @@
+body {
+    padding: 0;
+    background: #3A6EA5;
+    overflow: hidden;
+}
+
+th {
+    text-align: left;
+}
+
+#extBody {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+}
+
+.x-btn-disabled {
+    opacity: .5 !important;
+}
+
+.hideItem {
+    display: none;
+}
+
+/* ----- DESKTOP ----- */
+
+.desktop_item,
+.icon_item {
+    float: left;
+    margin: 4px;
+    padding: 4px;
+    width: 94px;
+    height: 94px;
+    cursor: default;
+    overflow: hidden;
+}
+
+.desktop_item_icon,
+.icon_item_icon {
+    margin: 4px 11px;
+}
+
+.icon_item_name,
+.desktop_item_name {
+    text-align: center;
+    overflow: hidden;
+    margin-top: 4px;
+}
+
+.icon_item_hover,
+.icon_item_selected,
+.desktop_item_hover,
+.desktop_item_selected {
+    padding: 3px;
+    border: 1px solid #b8d6fb;
+    border-radius: 2px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    background: linear-gradient(#fcfdfe, #f2f7fe);
+    background: -moz-linear-gradient(#fcfdfe, #f2f7fe);
+    background: -webkit-linear-gradient(#fcfdfe, #f2f7fe);
+    background: -o-linear-gradient(#fcfdfe, #f2f7fe);
+}
+
+/* ----- CLOCK ----- */
+
+#clockWindow {
+    right: 5px !important;
+    bottom: 30px !important;
+    left: auto !important;
+    top: auto !important;
+}
+
+#clockDate,
+#clockSunrise,
+#clockSunset {
+    font-size: 10px;
+}
+
+#clockTime {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 4px 0;
+}
+
+/* ----- GIBSON OS ----- */
+
+.gibson_status_table {
+    width: 100%;
+    font-size: 95%;
+    margin: 0 0 5px 0;
+}
+
+.gibson_status_table th {
+    width: 50%;
+    padding: 1px 0;
+}
+
+.gibson_status_table td {
+    width: 50%;
+    padding: 1px 0;
+    text-align: right;
+}
+
+.gibsonProgressFrame {
+    border: 1px solid #000;
+    height: 15px;
+    margin: 2px 0;
+    background: #FFF;
+    text-align: center;
+}
+
+.gibsonProgressBar {
+    background: #0F0;
+    height: 13px;
+}
+
+/* ----- EXPLORER ----- */
+
+.explorerPropertyThumb {
+    margin: 5px auto;
+}
+
+.explorerViewItem {
+    float: left;
+    margin: 4px;
+    padding: 4px;
+    cursor: default;
+    overflow: hidden;
+}
+
+.explorerViewItem32 {
+    width: 64px;
+    height: 64px;
+}
+
+.explorerViewItem48 {
+    width: 80px;
+    height: 80px;
+}
+
+.explorerViewItem64 {
+    width: 94px;
+    height: 94px;
+}
+
+.explorerViewItem128 {
+    width: 160px;
+    height: 160px;
+}
+
+.explorerViewItem256 {
+    width: 288px;
+    height: 288px;
+}
+
+.explorerViewItemBadge {
+    position: relative;
+}
+
+.explorerViewItem32 .explorerViewItemBadge {
+    position: relative;
+    left: 27px;
+    bottom: 20px;
+    height: 16px;
+}
+
+.explorerViewItem48 .explorerViewItemBadge {
+    position: relative;
+    left: 43px;
+    bottom: 20px;
+    height: 16px;
+}
+
+.explorerViewItem64 .explorerViewItemBadge {
+    position: relative;
+    left: 43px;
+    bottom: 36px;
+    height: 32px;
+}
+
+.explorerViewItem128 .explorerViewItemBadge {
+    position: relative;
+    left: 75px;
+    bottom: 68px;
+    height: 64px;
+}
+
+.explorerViewItem256 .explorerViewItemBadge {
+    position: relative;
+    left: 139px;
+    bottom: 132px;
+    height: 128px;
+}
+
+.explorerViewItemIcon {
+    margin: 4px 11px;
+}
+
+.explorerViewItemName {
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.explorerViewItem32 .explorerViewItemName,
+.explorerViewItem48 .explorerViewItemName {
+    bottom: 16px;
+}
+
+.explorerViewItem64 .explorerViewItemName {
+    bottom: 32px;
+}
+
+.explorerViewItem128 .explorerViewItemName {
+    bottom: 64px;
+}
+
+.explorerViewItem256 .explorerViewItemName {
+    bottom: 128px;
+}
+
+.explorerViewItemOver,
+.explorerViewItemSelected {
+    padding: 3px;
+    border: 1px solid #b8d6fb;
+    border-radius: 2px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    background: linear-gradient(#fcfdfe, #f2f7fe);
+    background: -moz-linear-gradient(#fcfdfe, #f2f7fe);
+    background: -webkit-linear-gradient(#fcfdfe, #f2f7fe);
+    background: -o-linear-gradient(#fcfdfe, #f2f7fe);
+}
+
+/* ----- HC ----- */
+
+.hcModuleOffline .x-grid-cell {
+    background-color: #CCC;
+    color: #999;
+}
+
+.hc_led_panel {
+    background: #000;
+}
+
+.hc_led_panel div,
+.hc_led {
+    border: 1px solid #FFF;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    background: #000;
+    border-radius: 15px;
+}
+
+.hc_led_panel td {
+    width: 60px;
+    height: 60px;
+    padding: 15px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.hc_led_thumb {
+    width: 20px;
+    height: 20px;
+    float: left;
+}
+
+.hc_led_thumb_small {
+    width: 7px;
+    height: 7px;
+    float: left;
+}
+
+.hc_rfmrgbledpanel5x5_sequence_item {
+    float: left;
+    padding: 5px;
+    margin: 5px;
+}
+
+.hc_rfmrgbledpanel5x5_sequence_item_hover {
+    border: 1px solid #B9CCF8;
+    background: #EFF8FF;
+}
+
+.hc_rfmrgbledpanel5x5_sequence_item_selected {
+    border: 1px solid #99BCE8;
+    background: #DFE8F7;
+}
+
+.hc_rfmrgbledpanel5x5_sequence_item_hover,
+.hc_rfmrgbledpanel5x5_sequence_item_selected {
+    padding: 4px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.hc_rfmrgbledpanel5x5_sequence_thumb {
+    margin-bottom: 5px;
+}
+
+.hc_rfmrgbledpanel5x5_sequence_runtime {
+    text-align: center;
+}
+
+.hc_rfmrhinetower_svg_led {
+    stroke: #000;
+    fill: #000;
+}
+
+/*.hcBoxPanel {
+    background: #000;
+    border: 1px solid #000;
+}
+
+.hcBoxPanel div {
+    border: 1px solid #000;
+    cursor: pointer;
+    height: 30px;
+    background: #FFF;
+}
+
+.hcBoxPanel td {
+    width: 55px;
+    text-align: center;
+    vertical-align: middle;
+}*/
+
+.coloredPanel .x-panel-body {
+    background-color: #dfe8f6;
+}
+
+.bme280Temperature {
+    margin: 5px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.bme280Pressure,
+.bme280Humidity {
+    margin: 0 5px 5px;
+}
+
+.hcNeopixelLed {
+    border: 1px solid #FFF;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    background: #000;
+    border-radius: 15px;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    text-shadow:
+        -1px -1px 2px #000,
+        1px -1px 2px #000,
+        -1px 1px 2px #000,
+        1px 1px 2px #000;
+    color: #FFF;
+    text-align: center;
+    padding-top: 6px;
+}
+
+.hcNeopixelLedSelected {
+    box-shadow: #FFF 0 0 30px 5px;
+    text-shadow:
+        -1px -1px 2px #FFF,
+        1px -1px 2px #FFF,
+        -1px 1px 2px #FFF,
+        1px 1px 2px #FFF;
+    color: #000;
+    user-select: none;
+}
+
+.hcNeopixelAnimationViewHeader {
+    height: 100%;
+    position: absolute;
+    width: 100%;
+}
+
+.hcNeopixelAnimationViewHeaderTime {
+    border-bottom: 1px solid #000;
+    background-color: #FFF;
+    position: relative;
+    z-index: 10;
+}
+
+.hcNeopixelAnimationViewHeaderTimeline {
+    overflow: hidden;
+    height: 100%;
+    border-left: 1px solid #000;
+}
+
+.hcNeopixelAnimationViewHeaderTimelineContainer div {
+    border: none;
+    width: 100px;
+    height: 100%;
+    border-right: 1px dotted #464646;
+    float: left;
+}
+
+.hcNeopixelAnimationViewLeds {
+    margin-top: 25px;
+    position: relative;
+    z-index: 1;
+    user-select: none;
+}
+
+.hcNeopixelAnimationViewHeaderTime,
+.hcNeopixelAnimationViewHeaderTimelineContainer div,
+.hcNeopixelAnimationViewLedsContainer div {
+    padding: 5px;
+    font-size: 11px;
+}
+
+.hcNeopixelAnimationViewLedsContainer div {
+    cursor: pointer;
+}
+
+.hcNeopixelAnimationViewLedsContainer div.selected {
+    background-color: #dfe8f6 !important;
+}
+
+.hcNeopixelAnimationViewLedsContainer div:nth-child(even) {
+    background-color: #fafafa;
+}
+
+.hcNeopixelAnimationViewHeaderTimeline,
+.hcNeopixelAnimationViewElements {
+    position: absolute;
+    top: 0;
+    width: calc(100% - 100px);
+    left: 100px;
+    z-index: 10;
+}
+
+.hcNeopixelAnimationViewElements {
+    height: calc(100% - 25px);
+    overflow: auto;
+    margin-top: 25px;
+    user-select: none;
+}
+
+.hcNeopixelAnimationViewElementsContainer {
+    width: 1000px;
+    margin-left: 1px;
+}
+
+.hcNeopixelAnimationViewElement {
+    position: absolute;
+    border-radius: 12px;
+    box-sizing: border-box;
+    border: 1px none transparent;
+    height: 14px;
+}
+
+.hcNeopixelAnimationViewElementSelected {
+    border: 1px solid #000;
+}

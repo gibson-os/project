@@ -1,0 +1,6 @@
+RewriteEngine on
+
+RewriteRule ^favicon.ico favicon.ico [L]
+RewriteRule ^robots.txt robots.txt [L]
+RewriteRule ^css/custom_icons.css$ custom_icons_css.php [L]
+RewriteRule !^(css/*|img/*|vid/*|js/*|fontawesome/*|permission_js\.php|custom_icons_css\.php) index.php [QSA]
