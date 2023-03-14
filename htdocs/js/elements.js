@@ -494,7 +494,7 @@ Ext.define('GibsonOS.Window', {
 Ext.define('GibsonOS.App', {
     extend: 'GibsonOS.Window',
     alias: ['widget.gosApp'],
-    renderTo: 'desktop',
+    renderTo: 'gosDesktop',
     itemId: 'app',
     resizable: true,
     maximizable: true,
