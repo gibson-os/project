@@ -11,15 +11,6 @@
     "endroid/qr-code": "^3.7",
     "ext-mbstring": "*"
   },
-  "require-dev": {
-    "codeception/codeception": "^4.0",
-    "friendsofphp/php-cs-fixer": "^3.0",
-    "phpmd/phpmd": "^2.7",
-    "captainhook/captainhook": "^5.0",
-    "captainhook/plugin-composer": "^5.0",
-    "vimeo/psalm": "^4.0",
-    "codeception/module-asserts": "^1.3"
-  },
   "scripts": {
     "fix": [
       "@php-cs"
@@ -31,16 +22,7 @@
       "@php-unit"
     ],
     "docker:up": "docker-compose -f .docker/docker-compose.yaml up -d",
-    "docker:build": "docker-compose -f .docker/docker-compose.yaml build",
-    "docker:ssh": "echo run 'docker exec -it docker_gos_webserver_1 /bin/bash'",
-    "gos-install": "docker exec docker_gos_webserver_1 'php /home/gibsonOS/offline/tools/system/install.php'",
-    "php:cs:fix": "php ./vendor/friendsofphp/php-cs-fixer/php-cs-fixer fix includes --verbose",
-    "php:cs:dry": "php ./vendor/friendsofphp/php-cs-fixer/php-cs-fixer fix includes --verbose --dry-run",
-    "php:psalm": "php ./vendor/vimeo/psalm/psalm",
-    "php:md": "php ./vendor/phpmd/phpmd/src/bin/phpmd includes text ruleset.xml",
-    "php:unit": "php ./vendor/codeception/codeception/codecept run unit --ext DotReporter",
-    "php:unit:push": "php ./vendor/codeception/codeception/codecept run unit --ext DotReporter --no-ansi --no-colors",
-    "php:unit:add": "php ./vendor/codeception/codeception/codecept generate:test unit"
+    "docker:build": "docker-compose -f .docker/docker-compose.yaml build"
   },
   "config": {
     "allow-plugins": {

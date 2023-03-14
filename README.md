@@ -17,5 +17,3 @@ bin/command core:install
 ```
 
 http://localhost
-
-!!! Cronjobs !!!

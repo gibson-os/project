@@ -37,6 +37,7 @@ RUN apt-get install -y google-chrome-stable
 RUN rm -rfv /etc/apache2/sites-enabled/*.conf
 COPY .docker/vhost/999-gibsonOs.conf /etc/apache2/sites-available/999-gibsonOs.conf
 RUN ln -s /etc/apache2/sites-available/999-gibsonOs.conf /etc/apache2/sites-enabled/999-gibsonOs.conf
+RUN crontab -l | { cat; echo "* * * * * php /home/gibsonOS/bin/command core:cronjob:run"; } | crontab -
 
 #CMD google-chrome-stable --disable-gpu --headless --remote-debugging-address=0.0.0.0 --remote-debugging-port=9222 --no-sandbox &
 CMD apachectl -D FOREGROUND
