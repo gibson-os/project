@@ -1,6 +1,7 @@
 <?php
 declare(strict_types=1);
 
+use GibsonOS\Core\Exception\GetError;
 use GibsonOS\Core\Manager\ServiceManager;
 use GibsonOS\Core\Service\EnvService;
 
@@ -33,6 +34,11 @@ function initServiceManager(): ServiceManager
     $serviceManager->setService(EnvService::class, $envService);
     $serviceManager->setService(mysqlDatabase::class, $mysqlDatabase);
     mysqlRegistry::getInstance()->set('database', $mysqlDatabase);
+
+    try {
+        date_default_timezone_set($envService->getString('TIMEZONE'));
+    } catch (GetError) {
+    }
 
     return $serviceManager;
 }

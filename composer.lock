@@ -594,16 +594,16 @@
         },
         {
             "name": "gibson-os/core",
-            "version": "1.3.13",
+            "version": "v1.4.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/gibson-os/core.git",
-                "reference": "f7e22ee2974378e8d0b5d029a4ca69453e19e007"
+                "reference": "f2ecf8a279ac8ddacb1643d90c0e3b0859da21b1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/gibson-os/core/zipball/f7e22ee2974378e8d0b5d029a4ca69453e19e007",
-                "reference": "f7e22ee2974378e8d0b5d029a4ca69453e19e007",
+                "url": "https://api.github.com/repos/gibson-os/core/zipball/f2ecf8a279ac8ddacb1643d90c0e3b0859da21b1",
+                "reference": "f2ecf8a279ac8ddacb1643d90c0e3b0859da21b1",
                 "shasum": ""
             },
             "require": {
@@ -640,28 +640,29 @@
                 "psr-4": {
                     "GibsonOS\\Core\\": "src/",
                     "GibsonOS\\Mock\\": "tests/mock/",
-                    "GibsonOS\\UnitTest\\": "tests/unit/"
+                    "GibsonOS\\Test\\Unit\\Core\\": "tests/unit/",
+                    "GibsonOS\\Test\\Functional\\Core\\": "tests/functional/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
             "support": {
                 "issues": "https://github.com/gibson-os/core/issues",
-                "source": "https://github.com/gibson-os/core/tree/1.3.13"
+                "source": "https://github.com/gibson-os/core/tree/v1.4.4"
             },
-            "time": "2023-03-14T20:49:40+00:00"
+            "time": "2023-03-26T14:51:56+00:00"
         },
         {
             "name": "gibson-os/explorer",
-            "version": "v1.1.5",
+            "version": "v1.1.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/gibson-os/explorer.git",
-                "reference": "2fd9aefbc5296079ab2c6e9cfc7be3a2aff79337"
+                "reference": "22efc7f331d2d62485cf25a233df2272a3a9c601"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/gibson-os/explorer/zipball/2fd9aefbc5296079ab2c6e9cfc7be3a2aff79337",
-                "reference": "2fd9aefbc5296079ab2c6e9cfc7be3a2aff79337",
+                "url": "https://api.github.com/repos/gibson-os/explorer/zipball/22efc7f331d2d62485cf25a233df2272a3a9c601",
+                "reference": "22efc7f331d2d62485cf25a233df2272a3a9c601",
                 "shasum": ""
             },
             "require": {
@@ -692,22 +693,22 @@
             "notification-url": "https://packagist.org/downloads/",
             "support": {
                 "issues": "https://github.com/gibson-os/explorer/issues",
-                "source": "https://github.com/gibson-os/explorer/tree/v1.1.5"
+                "source": "https://github.com/gibson-os/explorer/tree/v1.1.8"
             },
-            "time": "2023-03-13T21:46:32+00:00"
+            "time": "2023-03-26T15:05:25+00:00"
         },
         {
             "name": "gibson-os/hc",
-            "version": "v1.2.7",
+            "version": "v1.2.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/gibson-os/hc.git",
-                "reference": "8db200c2d0ec78cab7bdb142b0d59fb36b74a722"
+                "reference": "0fb80b3fa2da00d2a13690dc0d3e278664721311"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/gibson-os/hc/zipball/8db200c2d0ec78cab7bdb142b0d59fb36b74a722",
-                "reference": "8db200c2d0ec78cab7bdb142b0d59fb36b74a722",
+                "url": "https://api.github.com/repos/gibson-os/hc/zipball/0fb80b3fa2da00d2a13690dc0d3e278664721311",
+                "reference": "0fb80b3fa2da00d2a13690dc0d3e278664721311",
                 "shasum": ""
             },
             "require": {
@@ -739,9 +740,9 @@
             "notification-url": "https://packagist.org/downloads/",
             "support": {
                 "issues": "https://github.com/gibson-os/hc/issues",
-                "source": "https://github.com/gibson-os/hc/tree/v1.2.7"
+                "source": "https://github.com/gibson-os/hc/tree/v1.2.9"
             },
-            "time": "2023-02-17T23:52:49+00:00"
+            "time": "2023-03-24T11:38:44+00:00"
         },
         {
             "name": "gibson-os/mdo",
@@ -1752,16 +1753,16 @@
         },
         {
             "name": "smalot/pdfparser",
-            "version": "v2.3.0",
+            "version": "v2.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/smalot/pdfparser.git",
-                "reference": "70433d171a86dc881fc8c68fd6af4d60acb8313e"
+                "reference": "43a1c145b91d83f6b9c6fb4e5c2e6b274d2a0a17"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/smalot/pdfparser/zipball/70433d171a86dc881fc8c68fd6af4d60acb8313e",
-                "reference": "70433d171a86dc881fc8c68fd6af4d60acb8313e",
+                "url": "https://api.github.com/repos/smalot/pdfparser/zipball/43a1c145b91d83f6b9c6fb4e5c2e6b274d2a0a17",
+                "reference": "43a1c145b91d83f6b9c6fb4e5c2e6b274d2a0a17",
                 "shasum": ""
             },
             "require": {
@@ -1797,9 +1798,9 @@
             ],
             "support": {
                 "issues": "https://github.com/smalot/pdfparser/issues",
-                "source": "https://github.com/smalot/pdfparser/tree/v2.3.0"
+                "source": "https://github.com/smalot/pdfparser/tree/v2.4.0"
             },
-            "time": "2022-12-21T16:52:55+00:00"
+            "time": "2023-03-14T08:13:58+00:00"
         },
         {
             "name": "symfony/css-selector",

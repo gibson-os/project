@@ -2,17 +2,13 @@
 
 use GibsonOS\Core\Exception\RequestError;
 use GibsonOS\Core\Exception\UserError;
-use GibsonOS\Core\Model\User\Permission;
 use GibsonOS\Core\Service\ControllerService;
-use GibsonOS\Core\Service\PermissionService;
 use GibsonOS\Core\Service\RequestService;
-use GibsonOS\Core\Service\SessionService;
 use GibsonOS\Core\Service\UserService;
 
 require __DIR__ . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . 'bootstrap.php';
 
 $serviceManager = initServiceManager();
-
 
 // Module, Task, Action ermitteln und Parameter trennen
 $params = [];
