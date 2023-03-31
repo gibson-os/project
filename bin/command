@@ -7,6 +7,7 @@ use GibsonOS\Core\Exception\CommandError;
 use GibsonOS\Core\Exception\FactoryError;
 use GibsonOS\Core\Manager\ReflectionManager;
 use GibsonOS\Core\Service\CommandService;
+use GibsonOS\Core\Service\LockService;
 use GibsonOS\Core\Service\ProcessService;
 
 require __DIR__ . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . 'bootstrap.php';
@@ -16,7 +17,8 @@ try {
     $commandService = new CommandService(
         $serviceManager,
         $serviceManager->get(ProcessService::class),
-        $serviceManager->get(ReflectionManager::class)
+        $serviceManager->get(ReflectionManager::class),
+        $serviceManager->get(LockService::class),
     );
 
     return $commandService->execute(
