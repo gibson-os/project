@@ -450,6 +450,7 @@ Ext.define('GibsonOS.Window', {
         
         GibsonOS.Ajax.request({
             url: baseDir + 'core/setting/window',
+            method: 'GET',
             withoutFailure: true,
             params: {
                 id: this.getId(),
@@ -1366,9 +1367,9 @@ Ext.define('GibsonOS.data.proxy.Ajax', {
     },
     actionMethods: {
         create: 'POST',
-        read: 'POST',
+        read: 'GET',
         update: 'POST',
-        destroy: 'POST'
+        destroy: 'DELETE'
     }
 });
 
