@@ -4,6 +4,7 @@ declare(strict_types=1);
 use GibsonOS\Core\Exception\GetError;
 use GibsonOS\Core\Manager\ServiceManager;
 use GibsonOS\Core\Service\EnvService;
+use GibsonOS\Core\Service\TracerService;
 
 require_once __DIR__ . DIRECTORY_SEPARATOR . 'vendor' . DIRECTORY_SEPARATOR . 'autoload.php';
 
@@ -13,6 +14,10 @@ function initServiceManager(): ServiceManager
     $abstracts = [];
 
     $serviceManager = new ServiceManager();
+    $envService = $serviceManager->get(EnvService::class);
+    $envService->loadFile(__DIR__ . DIRECTORY_SEPARATOR . '.env');
+    $serviceManager->get(TracerService::class);
+
     require_once __DIR__ . DIRECTORY_SEPARATOR . 'config' . DIRECTORY_SEPARATOR . 'services.php';
 
     foreach ($interfaces as $interface => $class) {
@@ -23,8 +28,6 @@ function initServiceManager(): ServiceManager
         $serviceManager->setAbstract($abstract, $class);
     }
 
-    $envService = $serviceManager->get(EnvService::class);
-    $envService->loadFile(__DIR__ . DIRECTORY_SEPARATOR . '.env');
     $mysqlDatabase = new mysqlDatabase(
         $envService->getString('MYSQL_HOST'),
         $envService->getString('MYSQL_USER'),
