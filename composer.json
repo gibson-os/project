@@ -2,12 +2,12 @@
   "name": "gibson-os/project",
   "require": {
     "php": " ^8.2",
-    "gibson-os/ahoi": "^2.0.0",
-    "gibson-os/archivist": "^2.0.0",
-    "gibson-os/core": "^2.0.0",
-    "gibson-os/explorer": "^2.0.0",
-    "gibson-os/hc": "^2.0.0",
-    "gibson-os/transfer": "^2.0.0",
+    "gibson-os/ahoi": "^3.0.0",
+    "gibson-os/archivist": "^3.0.0",
+    "gibson-os/core": "^3.0.0",
+    "gibson-os/explorer": "^3.0.0",
+    "gibson-os/hc": "^3.0.0",
+    "gibson-os/transfer": "^3.0.0",
     "endroid/qr-code": "^3.7",
     "ext-mbstring": "*"
   },

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0d72acb8f43d3d34a0f8e12232b9604b",
+    "content-hash": "feb4173cd38eb685b3d75824cf98ad79",
     "packages": [
         {
             "name": "bacon/bacon-qr-code",
@@ -505,20 +505,20 @@
         },
         {
             "name": "gibson-os/ahoi",
-            "version": "v2.0.1",
+            "version": "v3.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/gibson-os/ahoi.git",
-                "reference": "ba5e1f9be3b2c66c1fa657ff7cc54660d119505e"
+                "reference": "f900154e2170df37fc86a348cc3782ca6bd72358"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/gibson-os/ahoi/zipball/ba5e1f9be3b2c66c1fa657ff7cc54660d119505e",
-                "reference": "ba5e1f9be3b2c66c1fa657ff7cc54660d119505e",
+                "url": "https://api.github.com/repos/gibson-os/ahoi/zipball/f900154e2170df37fc86a348cc3782ca6bd72358",
+                "reference": "f900154e2170df37fc86a348cc3782ca6bd72358",
                 "shasum": ""
             },
             "require": {
-                "gibson-os/transfer": "^2.0.0",
+                "gibson-os/transfer": "^3.0.0",
                 "php": " ^8.2"
             },
             "require-dev": {
@@ -543,29 +543,29 @@
             "notification-url": "https://packagist.org/downloads/",
             "support": {
                 "issues": "https://github.com/gibson-os/ahoi/issues",
-                "source": "https://github.com/gibson-os/ahoi/tree/v2.0.1"
+                "source": "https://github.com/gibson-os/ahoi/tree/v3.0.0"
             },
-            "time": "2023-07-06T22:24:46+00:00"
+            "time": "2023-07-21T11:49:24+00:00"
         },
         {
             "name": "gibson-os/archivist",
-            "version": "v2.0.1",
+            "version": "v3.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/gibson-os/archivist.git",
-                "reference": "989bf53885beb25e36e5ffcdb8f0456fcd114c5c"
+                "reference": "252134190b1f39860294794dc803a8356d963b5d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/gibson-os/archivist/zipball/989bf53885beb25e36e5ffcdb8f0456fcd114c5c",
-                "reference": "989bf53885beb25e36e5ffcdb8f0456fcd114c5c",
+                "url": "https://api.github.com/repos/gibson-os/archivist/zipball/252134190b1f39860294794dc803a8356d963b5d",
+                "reference": "252134190b1f39860294794dc803a8356d963b5d",
                 "shasum": ""
             },
             "require": {
                 "behat/mink": "^1.8",
                 "dmore/chrome-mink-driver": "^2.7",
                 "ext-json": "*",
-                "gibson-os/explorer": "^2.0.0",
+                "gibson-os/explorer": "^3.0.0",
                 "php": " ^8.2"
             },
             "require-dev": {
@@ -591,22 +591,22 @@
             "notification-url": "https://packagist.org/downloads/",
             "support": {
                 "issues": "https://github.com/gibson-os/archivist/issues",
-                "source": "https://github.com/gibson-os/archivist/tree/v2.0.1"
+                "source": "https://github.com/gibson-os/archivist/tree/v3.0.0"
             },
-            "time": "2023-07-06T22:26:39+00:00"
+            "time": "2023-07-21T11:52:22+00:00"
         },
         {
             "name": "gibson-os/core",
-            "version": "v2.8.0",
+            "version": "v3.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/gibson-os/core.git",
-                "reference": "6e9a0c966b93e4cef8de21d8887acfce6224f380"
+                "reference": "f4dbb485dfcefe84ea23b598ed56f0b25029113c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/gibson-os/core/zipball/6e9a0c966b93e4cef8de21d8887acfce6224f380",
-                "reference": "6e9a0c966b93e4cef8de21d8887acfce6224f380",
+                "url": "https://api.github.com/repos/gibson-os/core/zipball/f4dbb485dfcefe84ea23b598ed56f0b25029113c",
+                "reference": "f4dbb485dfcefe84ea23b598ed56f0b25029113c",
                 "shasum": ""
             },
             "require": {
@@ -655,22 +655,22 @@
             "notification-url": "https://packagist.org/downloads/",
             "support": {
                 "issues": "https://github.com/gibson-os/core/issues",
-                "source": "https://github.com/gibson-os/core/tree/v2.8.0"
+                "source": "https://github.com/gibson-os/core/tree/v3.0.0"
             },
-            "time": "2023-07-20T21:31:07+00:00"
+            "time": "2023-07-21T11:28:45+00:00"
         },
         {
             "name": "gibson-os/explorer",
-            "version": "v2.5.0",
+            "version": "v3.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/gibson-os/explorer.git",
-                "reference": "9d72b97f09d3018781c12588bda7d075eb39328a"
+                "reference": "9b1af4175ad8830b73fc29c985487738c084e1a9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/gibson-os/explorer/zipball/9d72b97f09d3018781c12588bda7d075eb39328a",
-                "reference": "9d72b97f09d3018781c12588bda7d075eb39328a",
+                "url": "https://api.github.com/repos/gibson-os/explorer/zipball/9b1af4175ad8830b73fc29c985487738c084e1a9",
+                "reference": "9b1af4175ad8830b73fc29c985487738c084e1a9",
                 "shasum": ""
             },
             "require": {
@@ -679,7 +679,7 @@
                 "ext-json": "*",
                 "ext-mbstring": "*",
                 "ext-sqlite3": "*",
-                "gibson-os/core": "^2.0.0",
+                "gibson-os/core": "^3.0.0",
                 "php": " ^8.2"
             },
             "require-dev": {
@@ -704,29 +704,29 @@
             "notification-url": "https://packagist.org/downloads/",
             "support": {
                 "issues": "https://github.com/gibson-os/explorer/issues",
-                "source": "https://github.com/gibson-os/explorer/tree/v2.5.0"
+                "source": "https://github.com/gibson-os/explorer/tree/v3.0.0"
             },
-            "time": "2023-07-17T20:19:23+00:00"
+            "time": "2023-07-21T11:43:06+00:00"
         },
         {
             "name": "gibson-os/hc",
-            "version": "v2.0.1",
+            "version": "v3.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/gibson-os/hc.git",
-                "reference": "caa63d15817194b0cdcf7f53a1b65f1d58fe115e"
+                "reference": "d628224cf8780cb41aa36948c43387ade633c5b9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/gibson-os/hc/zipball/caa63d15817194b0cdcf7f53a1b65f1d58fe115e",
-                "reference": "caa63d15817194b0cdcf7f53a1b65f1d58fe115e",
+                "url": "https://api.github.com/repos/gibson-os/hc/zipball/d628224cf8780cb41aa36948c43387ade633c5b9",
+                "reference": "d628224cf8780cb41aa36948c43387ade633c5b9",
                 "shasum": ""
             },
             "require": {
                 "chillerlan/php-qrcode": "^4.3",
                 "ext-json": "*",
                 "ext-mbstring": "*",
-                "gibson-os/core": "^2.0.0",
+                "gibson-os/core": "^3.0.0",
                 "php": " ^8.2",
                 "tecnickcom/tcpdf": "^6.3"
             },
@@ -752,9 +752,9 @@
             "notification-url": "https://packagist.org/downloads/",
             "support": {
                 "issues": "https://github.com/gibson-os/hc/issues",
-                "source": "https://github.com/gibson-os/hc/tree/v2.0.1"
+                "source": "https://github.com/gibson-os/hc/tree/v3.0.1"
             },
-            "time": "2023-07-06T22:20:17+00:00"
+            "time": "2023-07-21T12:01:27+00:00"
         },
         {
             "name": "gibson-os/mdo",
@@ -800,16 +800,16 @@
         },
         {
             "name": "gibson-os/transfer",
-            "version": "v2.0.1",
+            "version": "v3.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/gibson-os/transfer.git",
-                "reference": "dac0a1fbeda74a7b151e3f976b3983ba2e40f10b"
+                "reference": "b7439a4415180515535298acf204e0f76f70b88d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/gibson-os/transfer/zipball/dac0a1fbeda74a7b151e3f976b3983ba2e40f10b",
-                "reference": "dac0a1fbeda74a7b151e3f976b3983ba2e40f10b",
+                "url": "https://api.github.com/repos/gibson-os/transfer/zipball/b7439a4415180515535298acf204e0f76f70b88d",
+                "reference": "b7439a4415180515535298acf204e0f76f70b88d",
                 "shasum": ""
             },
             "require": {
@@ -818,7 +818,7 @@
                 "ext-mbstring": "*",
                 "ext-ssh2": "*",
                 "ext-zlib": "*",
-                "gibson-os/explorer": "^2.0.0",
+                "gibson-os/explorer": "^3.0.0",
                 "php": " ^8.2"
             },
             "require-dev": {
@@ -843,9 +843,9 @@
             "notification-url": "https://packagist.org/downloads/",
             "support": {
                 "issues": "https://github.com/gibson-os/transfer/issues",
-                "source": "https://github.com/gibson-os/transfer/tree/v2.0.1"
+                "source": "https://github.com/gibson-os/transfer/tree/v3.0.0"
             },
-            "time": "2023-07-06T22:23:01+00:00"
+            "time": "2023-07-21T11:46:34+00:00"
         },
         {
             "name": "google/auth",

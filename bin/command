@@ -5,34 +5,27 @@ declare(strict_types=1);
 use GibsonOS\Core\Command\ListCommand;
 use GibsonOS\Core\Exception\CommandError;
 use GibsonOS\Core\Exception\FactoryError;
-use GibsonOS\Core\Manager\ReflectionManager;
 use GibsonOS\Core\Service\CommandService;
-use GibsonOS\Core\Service\LockService;
-use GibsonOS\Core\Service\NewRelicService;
-use GibsonOS\Core\Service\ProcessService;
 
 require __DIR__ . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . 'bootstrap.php';
 
 try {
     $serviceManager = initServiceManager();
-    $commandService = new CommandService(
-        $serviceManager,
-        $serviceManager->get(ProcessService::class),
-        $serviceManager->get(ReflectionManager::class),
-        $serviceManager->get(LockService::class),
-        $serviceManager->get(NewRelicService::class),
-    );
+    $commandService = $serviceManager->get(CommandService::class)
+        ->setArguments($argv)
+        ->setOptions($argv)
+    ;
 
     return $commandService->execute(
         $commandService->getCommandClassname($argv),
-        $commandService->getArguments($argv),
-        $commandService->getOptions($argv)
+        $commandService->getArguments(),
+        $commandService->getOptions(),
     );
 } catch (Throwable $e) {
     $lines = [get_class($e) . ': ' . $e->getMessage()];
 
     foreach ($e->getTrace() as $trace) {
-        $lines[] = $trace['file'] . ':' . $trace['line'] . ($trace['type'] ?? ' ') . $trace['function'] . '()';
+        $lines[] = ($trace['file'] ?? '') . ':' . ($trace['line'] ?? '') . ($trace['type'] ?? ' ') . $trace['function'] . '()';
     }
 
     $lineLengths = array_map(fn (string $line): int => mb_strlen($line), $lines);
