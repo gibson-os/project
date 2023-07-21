@@ -5,21 +5,23 @@ declare(strict_types=1);
 use GibsonOS\Core\Command\ListCommand;
 use GibsonOS\Core\Exception\CommandError;
 use GibsonOS\Core\Exception\FactoryError;
+use GibsonOS\Core\Service\Command\ArgumentService;
 use GibsonOS\Core\Service\CommandService;
 
 require __DIR__ . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . 'bootstrap.php';
 
 try {
     $serviceManager = initServiceManager();
-    $commandService = $serviceManager->get(CommandService::class)
+    $argumentService = $serviceManager->get(ArgumentService::class)
         ->setArguments($argv)
         ->setOptions($argv)
     ;
+    $commandService = $serviceManager->get(CommandService::class);
 
     return $commandService->execute(
         $commandService->getCommandClassname($argv),
-        $commandService->getArguments(),
-        $commandService->getOptions(),
+        $argumentService->getArguments(),
+        $argumentService->getOptions(),
     );
 } catch (Throwable $e) {
     $lines = [get_class($e) . ': ' . $e->getMessage()];

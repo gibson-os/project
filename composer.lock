@@ -597,16 +597,16 @@
         },
         {
             "name": "gibson-os/core",
-            "version": "v3.0.0",
+            "version": "v3.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/gibson-os/core.git",
-                "reference": "f4dbb485dfcefe84ea23b598ed56f0b25029113c"
+                "reference": "8788ce6c88f1cdca49757632a4afa296338756eb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/gibson-os/core/zipball/f4dbb485dfcefe84ea23b598ed56f0b25029113c",
-                "reference": "f4dbb485dfcefe84ea23b598ed56f0b25029113c",
+                "url": "https://api.github.com/repos/gibson-os/core/zipball/8788ce6c88f1cdca49757632a4afa296338756eb",
+                "reference": "8788ce6c88f1cdca49757632a4afa296338756eb",
                 "shasum": ""
             },
             "require": {
@@ -655,9 +655,9 @@
             "notification-url": "https://packagist.org/downloads/",
             "support": {
                 "issues": "https://github.com/gibson-os/core/issues",
-                "source": "https://github.com/gibson-os/core/tree/v3.0.0"
+                "source": "https://github.com/gibson-os/core/tree/v3.0.1"
             },
-            "time": "2023-07-21T11:28:45+00:00"
+            "time": "2023-07-21T12:53:16+00:00"
         },
         {
             "name": "gibson-os/explorer",
