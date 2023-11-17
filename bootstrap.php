@@ -5,6 +5,7 @@ use GibsonOS\Core\Exception\GetError;
 use GibsonOS\Core\Manager\ServiceManager;
 use GibsonOS\Core\Service\EnvService;
 use GibsonOS\Core\Service\TracerService;
+use MDO\Client;
 
 require_once __DIR__ . DIRECTORY_SEPARATOR . 'vendor' . DIRECTORY_SEPARATOR . 'autoload.php';
 
@@ -28,15 +29,14 @@ function initServiceManager(): ServiceManager
         $serviceManager->setAbstract($abstract, $class);
     }
 
-    $mysqlDatabase = new mysqlDatabase(
+    $client = new Client(
         $envService->getString('MYSQL_HOST'),
         $envService->getString('MYSQL_USER'),
-        $envService->getString('MYSQL_PASS')
+        $envService->getString('MYSQL_PASS'),
+        $envService->getString('MYSQL_DATABASE')
     );
-    $mysqlDatabase->openDB($envService->getString('MYSQL_DATABASE'));
     $serviceManager->setService(EnvService::class, $envService);
-    $serviceManager->setService(mysqlDatabase::class, $mysqlDatabase);
-    mysqlRegistry::getInstance()->set('database', $mysqlDatabase);
+    $serviceManager->setService(Client::class, $client);
 
     try {
         date_default_timezone_set($envService->getString('TIMEZONE'));

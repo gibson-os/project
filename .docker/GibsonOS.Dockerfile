@@ -15,7 +15,7 @@ RUN wget https://www.deb-multimedia.org/pool/main/d/deb-multimedia-keyring/deb-m
 RUN dpkg -i deb-multimedia-keyring_2016.8.1_all.deb
 RUN sh -c 'echo "deb http://www.deb-multimedia.org bullseye main non-free" >> /etc/apt/sources.list.d/deb-multimedia.list'
 RUN apt-get update -y
-RUN #apt-get install -y deb-multimedia-keyring
+RUN apt-get install -y deb-multimedia-keyring
 RUN apt-get install -y apache2
 RUN apt-get install -y php8.2
 RUN apt-get install -y php8.2-dev
@@ -29,28 +29,29 @@ RUN apt-get install -y php8.2-zip
 RUN apt-get install -y php8.2-ssh2
 RUN apt-get install -y php8.2-gd
 RUN apt-get install -y composer
-RUN apt-get install -y ffmpeg
+#RUN apt-get install -y ffmpeg
 RUN apt-get update -y --fix-missing
 RUN apt-get install -y cron
 RUN apt-get install -y vim
 RUN apt-get install -y google-chrome-stable
+RUN apt-get install -y curl
 RUN rm -rfv /etc/apache2/sites-enabled/*.conf
 COPY .docker/vhost/999-gibsonOs.conf /etc/apache2/sites-available/999-gibsonOs.conf
 RUN ln -s /etc/apache2/sites-available/999-gibsonOs.conf /etc/apache2/sites-enabled/999-gibsonOs.conf
 RUN crontab -l | { cat; echo "* * * * * php /home/gibsonOS/bin/command core:cronjob:run"; } | crontab
 # New Relic
-RUN curl -L https://download.newrelic.com/php_agent/release/newrelic-php5-10.11.0.3-linux.tar.gz | tar -C /tmp -zx
-RUN \
-  export NR_INSTALL_USE_CP_NOT_LN=1 && \
-  export NR_INSTALL_SILENT=1 && \
-  /tmp/newrelic-php5-*/newrelic-install install
-RUN rm -rf /tmp/newrelic-php5-* /tmp/nrinstall*
-RUN sed -i \
-      -e 's/"REPLACE_WITH_REAL_KEY"/"YOUR_LICENSE_KEY"/' \
-      -e 's/newrelic.appname = "PHP Application"/newrelic.appname = "GibsonOS dev"/' \
-      -e 's/;newrelic.daemon.app_connect_timeout =.*/newrelic.daemon.app_connect_timeout=15s/' \
-      -e 's/;newrelic.daemon.start_timeout =.*/newrelic.daemon.start_timeout=5s/' \
-      /etc/php/8.2/cli/conf.d/newrelic.ini
+#RUN curl -L https://download.newrelic.com/php_agent/release/newrelic-php5-10.11.0.3-linux.tar.gz | tar -C /tmp -zx
+#RUN \
+#  export NR_INSTALL_USE_CP_NOT_LN=1 && \
+#  export NR_INSTALL_SILENT=1 && \
+#  /tmp/newrelic-php5-*/newrelic-install install
+#RUN rm -rf /tmp/newrelic-php5-* /tmp/nrinstall*
+#RUN sed -i \
+#      -e 's/"REPLACE_WITH_REAL_KEY"/"YOUR_LICENSE_KEY"/' \
+#      -e 's/newrelic.appname = "PHP Application"/newrelic.appname = "GibsonOS dev"/' \
+#      -e 's/;newrelic.daemon.app_connect_timeout =.*/newrelic.daemon.app_connect_timeout=15s/' \
+#      -e 's/;newrelic.daemon.start_timeout =.*/newrelic.daemon.start_timeout=5s/' \
+#      /etc/php/8.2/cli/conf.d/newrelic.ini
 # OpenTelemetry
 RUN apt-get install -y gcc
 RUN apt-get install -y make
